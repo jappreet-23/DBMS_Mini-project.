@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+  font-family: Arial;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0.1);
+
+}
+  input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0.1);
+
+}
+
+input[type=submit] {
+  width: 100%;
+   background-color: rgba(0,0,0,0.5);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div.container {
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.5);
+  padding: 20px;
+}
+</style>
+<body background="pi.jpg">
+
+<h3>BOOKING DETAILS</h3>
+<p>ENTER THE  DETAILS FOR BOOKING</p>
+
+<div class="container">
+  <form action="booking.php" method = "POST">
+    <label for="noa">Number of Adults</label>
+    <input type="number" id="noa" name="noa" placeholder="Enter Number of Adults" style="color: solid white;">
+
+    <label for="noc">Number of Children</label>
+    <input type="number" id="noc" name="noc" placeholder="Enter Number of Children">
+    
+   <label for="noca">Number of Camera</label>
+    <input type="text" id="noca" name="noca" placeholder="Enter Number of Cameras">
+
+     
+    <label for="noe">Number of Electrical cars</label>
+    <input type="number" id="noe" name="noe" placeholder="Enter Number of Electrical Cars">
+
+   
+  
+     <button type="submit" style="background-color: rgba(0,0,0,0.5)">ENTER</button>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="valid.js"></script>
+  </form>
+</div>
+
+</body>
+</html>

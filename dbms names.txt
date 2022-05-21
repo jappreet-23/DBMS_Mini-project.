@@ -1,0 +1,65 @@
+table: admin
+AdminName
+aemail
+psw
+ad_id(AI)
+
+
+table: user
+u_id(AI)
+u_name
+u_email
+psw
+phone
+
+
+
+table:sanctuary
+S_Id
+S_Name
+Address
+Phone
+Adoption
+
+
+table:staff_details
+S_Id
+St_Id
+St_Name
+age
+phone
+Gender
+Salary
+
+table: bird_details
+S_Id
+B_ID
+B_Type
+B_Origin
+Scientific_Name
+
+table: adoption
+S_Id
+A_Id
+B_Id
+A_name
+A_phone
+Cost
+
+table: booking
+No_of_Adults
+No_of_Children
+No_of_Cameras
+No_of_Ecars
+Bo_Id(AI)
+
+
+table: billing
+Cost_for_Adults
+Cost_for_Children
+Cost_for_Cameras
+Cost_for_Ecars
+R_Id(AI)
+Total
+
+

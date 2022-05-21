@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+  font-family: Arial;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0.5);
+}
+  input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0.5);
+
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div.container {
+  border-radius: 5px;
+ background-color: rgba(0,0,0,0.5);
+  padding: 20px;
+}
+</style>
+<body background="ppi.jpg" >
+
+<h3>BIRD DETAILS</h3>
+<p>ENTER THE BIRD DETAILS</p>
+
+<div class="container">
+  <form action="bird.php" method = "POST">
+    <label for="bid">B-ID</label>
+    <input type="text" id="bid" name="bid" placeholder="Enter bird-id">
+
+    <label for="btype">BIRD-TYPE</label>
+    <input type="text" id="btype" name="btype" placeholder="Enter Bird Type">
+    
+   <label for="Borigin">Bird Origin</label>
+    <input type="text" id="borigin" name="borigin" placeholder="Enter Bird Origin">
+
+     
+    <label for="sname">Scientific Name</label>
+    <input type="text" id="sname" name="sname" placeholder="Enter Scientific Name">
+
+    <label for="Sid">Sanctuary Id</label>
+    <input type="text" id="Sid" name="Sid" placeholder="Enter Sanctuary Id">
+
+  
+     <button type="submit">ENTER</button>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="valid.js"></script>
+  </form>
+</div>
+
+</body>
+</html>
